@@ -1,9 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 90%;
+  background-color: lightblue;
+  padding: 24px;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
 .labelfrm {
-  display: block;
+  display: flex;
   font-size: small;
   margin-top: 5px;
 }
+
+/* .wrapper {
+  margin-bottom: 18px;
+} */
+
+input,
+textarea {
+  width: 100%;
+  padding: 2px 6px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid white;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+  border: 2px solid skyblue;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  padding: 2px 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: skyblue;
+}
+
 .error {
   font-size: small;
   color: red;
+}
+
+@media only screen and (min-width: 480px) {
+  main {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    width: 35%;
+  }
 }
