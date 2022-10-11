@@ -1,0 +1,9 @@
+.labelfrm {
+  display: block;
+  font-size: small;
+  margin-top: 5px;
+}
+.error {
+  font-size: small;
+  color: red;
+}
